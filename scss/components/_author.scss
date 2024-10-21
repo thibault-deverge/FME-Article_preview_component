@@ -1,0 +1,23 @@
+@use "../abstracts/variables" as var;
+
+.author {
+	width: 100%;
+	display: flex;
+	align-items: center;
+	gap: 1rem;
+}
+
+.author__avatar {
+	width: 2.5rem;
+	height: 2.5rem;
+	border-radius: 50%;
+}
+
+.author__name {
+	font-weight: var.$fw-bolder;
+	color: var.$clr-dark-blue;
+}
+
+.author__date {
+	color: var.$clr-dark-light;
+}

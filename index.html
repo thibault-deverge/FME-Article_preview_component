@@ -5,23 +5,33 @@
 		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
 		<link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png" />
 		<title>Article preview component</title>
+		<link rel="preconnect" href="https://fonts.googleapis.com" />
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+		<link
+			href="https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&display=swap"
+			rel="stylesheet"
+		/>
 		<link rel="stylesheet" href="css/main.css" />
 		<script defer src="scripts/app.js"></script>
 	</head>
 	<body>
 		<main>
 			<article class="post">
-				<img class="post__image" src="/images/drawers.jpg" alt="" aria-hidden="true" />
-				<h1 class="post__title">
-					Shift the overall look and feel by adding these wonderful touches to furniture
-					in your home
-				</h1>
-				<p class="post__description">
-					Ever been in a room and felt like something was missing? Perhaps it felt
-					slightly bare and uninviting. I've got some simple tips to help you make any
-					room feel complete.
-				</p>
-				<div class="post__footer">
+				<div class="post__image">
+					<img class="" src="/images/drawers.jpg" alt="" aria-hidden="true" />
+				</div>
+
+				<section class="post__info">
+					<h1 class="post__title">
+						Shift the overall look and feel by adding these wonderful touches to furniture
+						in your home
+					</h1>
+					<p class="post__description">
+						Ever been in a room and felt like something was missing? Perhaps it felt
+						slightly bare and uninviting. I've got some simple tips to help you make any
+						room feel complete.
+					</p>
+
 					<div class="author">
 						<img
 							class="author__avatar"
@@ -32,14 +42,46 @@
 							<p class="author__name">Michelle Appleton</p>
 							<p class="author__date">28 Jun 2020</p>
 						</div>
+						<button class="button" aria-label="Open share panel">
+							<img
+								class="share-button__icon"
+								src="/images/icon-share.svg"
+								alt=""
+								aria-hidden="true"
+							/>
+						</button>
 					</div>
-					<button class="share-button" aria-label="Open share panel">
+				</section>
+
+				<div class="share-panel share-panel--visible">
+					<h2 class="share-panel__title">Share</h2>
+					<div class="share-panel__icons">
 						<img
-							class="share-button__icon"
-							src="/images/icon-share.svg"
+							class="social-icon"
+							src="/images/icon-facebook.svg"
 							alt=""
 							aria-hidden="true"
 						/>
+						<img
+							class="social-icon"
+							src="/images/icon-twitter.svg"
+							alt=""
+							aria-hidden="true"
+						/>
+						<img
+							class="social-icon"
+							src="/images/icon-pinterest.svg"
+							alt=""
+							aria-hidden="true"
+						/>
+					</div>
+					<button class="button button--dark" aria-label="Open share panel">
+						<svg xmlns="http://www.w3.org/2000/svg" width="15" height="13">
+							<path
+								fill="#fff"
+								d="M15 6.495L8.766.014V3.88H7.441C3.33 3.88 0 7.039 0 10.936v2.049l.589-.612C2.59 10.294 5.422 9.11 8.39 9.11h.375v3.867L15 6.495z"
+							/>
+						</svg>
 					</button>
 				</div>
 			</article>

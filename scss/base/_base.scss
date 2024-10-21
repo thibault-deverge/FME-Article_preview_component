@@ -1,0 +1,19 @@
+@use "../abstracts/variables" as var;
+
+body {
+	background-color: var.$clr-blue-extralight;
+	color: var.$clr-dark-medium;
+	font-family: var.$font-primary;
+	font-size: var.$fs-base;
+	font-weight: var.$fw-light;
+	line-height: 1.5;
+
+	min-height: 100vh;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+main {
+	margin: 0 1.5rem;
+}
